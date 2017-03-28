@@ -3,8 +3,9 @@
 
 #eclipse and spring settings files.
 .classpath
-.springbeans
+.springBeans
 .project
+/.settings/
 
 # Log file
 *.log
