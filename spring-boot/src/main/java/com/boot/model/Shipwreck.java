@@ -1,6 +1,16 @@
 package com.boot.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+//This class fields match exactly with table columns, so no additional apis required for CRUD operation.
+
+@Entity
 public class Shipwreck {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	Long id;
 	String name;
 	String description;

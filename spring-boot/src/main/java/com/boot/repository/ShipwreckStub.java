@@ -1,4 +1,4 @@
-package com.boot.service;
+package com.boot.repository;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,6 +7,8 @@ import java.util.Map;
 
 import com.boot.model.Shipwreck;
 
+
+//Stub class to provide dummy data. Used in place for respository.
 public class ShipwreckStub {
 	private static Map<Long, Shipwreck> wrecks = new HashMap<Long, Shipwreck>();
 	private static Long idIndex = 3L;
