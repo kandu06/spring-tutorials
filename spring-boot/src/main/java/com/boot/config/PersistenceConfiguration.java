@@ -15,14 +15,17 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 public class PersistenceConfiguration {
 
-	
+	/*
 	// @Bean annotation tells spring to create this bean and autowire it in
 	// application.
+	
 	// @ConfigurationProperties tells spring to use any property with given
 	// prefix from application.properties. Additional properties can also be set
 	// here.
+	
 	// @Primary tells spring to use this datasource by default, in case it finds
 	// a conflict.
+
 	@Bean
 	@ConfigurationProperties(prefix = "spring.datasource")
 	@Primary
@@ -30,19 +33,14 @@ public class PersistenceConfiguration {
 		return DataSourceBuilder.create().build();
 	}
 
-	// @Bean annotation tells spring to create this bean and autowire it in
-	// application.
-	@Bean
-	
-	// @ConfigurationProperties tells spring to use any property with given
-	// prefix from application.properties. Additional properties can also be set
-	// here.
-	@ConfigurationProperties(prefix = "datasource.flyway")
-	
 	// @FlywayDataSource tells spring that this is the flyway datasource. Spring integrates well with flyway db.
+	
+	@Bean
+	@ConfigurationProperties(prefix = "flyway")
 	@FlywayDataSource
 	public DataSource flywayDataSource() {
 		return DataSourceBuilder.create().build();
 	}
+	*/
 
 }
